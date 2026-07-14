@@ -1,5 +1,6 @@
 import { useEffect, useState, useRef, useCallback } from 'react';
 import { Play, Heart, Music, Trophy, Sparkles, Star, Crown, Gift, Cake, X, ChevronDown, PawPrint, Rabbit } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
 
 // Documentary images mapping
 const images = {
@@ -1634,6 +1635,7 @@ setSoundOn(!soundOn);
           <FinalRevealSection />
         </>
       )}
+      <Analytics />
     </div>
   );
 }
